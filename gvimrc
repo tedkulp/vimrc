@@ -216,6 +216,8 @@ if exists("loaded_nerd_tree")
   cabbrev Edit! e!
 endif
 
+color desert256
+
 " New font
 set guifont=Inconsolata:h12
 

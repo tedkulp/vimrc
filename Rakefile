@@ -145,9 +145,8 @@ vim_plugin_task "command_t",        "http://s3.wincent.com/command-t/releases/co
   end
 end
 
-if File.exists?(custom = File.expand_path("~/.custom.rake"))
-  puts "Loading your custom rake file"
-  import(custom)
+vim_plugin_task "desert256" do
+  sh "curl http://www.vim.org/scripts/download_script.php?src_id=4055 > colors/desert256.vim"
 end
 
 desc "Update the documentation"
