@@ -132,6 +132,7 @@ vim_plugin_task "yankring",         "http://www.vim.org/scripts/download_script.
 vim_plugin_task "jekyll",           "git://github.com/tedkulp/jekyll.vim.git"
 vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
 vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
+vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 
 vim_plugin_task "command_t",        "http://s3.wincent.com/command-t/releases/command-t-1.2.1.vba" do
   Dir.chdir "ruby/command-t" do
