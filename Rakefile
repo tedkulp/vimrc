@@ -138,6 +138,7 @@ vim_plugin_task "abolish",          "git://github.com/tpope/vim-abolish.git"
 vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
+vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
 
 vim_plugin_task "command_t",        "http://s3.wincent.com/command-t/releases/command-t-1.2.1.vba" do
   Dir.chdir "ruby/command-t" do
