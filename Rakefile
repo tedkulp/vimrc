@@ -124,23 +124,24 @@ def skip_vim_plugin(name)
   Rake::Task[:default].prerequisites.delete(name)
 end
 
-vim_plugin_task "ack.vim",          "git://github.com/mileszs/ack.vim.git"
-vim_plugin_task "nerdtree",         "git://github.com/wycats/nerdtree.git"
-vim_plugin_task "nerdcommenter",    "git://github.com/ddollar/nerdcommenter.git"
-vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"
 vim_plugin_task "yankring",         "http://www.vim.org/scripts/download_script.php?src_id=13554"
-vim_plugin_task "jekyll",           "git://github.com/tedkulp/jekyll.vim.git"
 vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
-vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
-vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
-vim_plugin_task "indent_object",    "git://github.com/michaeljsmith/vim-indent-object.git"
-vim_plugin_task "abolish",          "git://github.com/tpope/vim-abolish.git"
+vim_plugin_task "nerdcommenter",    "git://github.com/ddollar/nerdcommenter.git"
 vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
-vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
-vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
-vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
-vim_plugin_task "vim-rake",             "git://github.com/tpope/vim-rake.git"
+vim_plugin_task "indent_object",    "git://github.com/michaeljsmith/vim-indent-object.git"
+vim_plugin_task "ack.vim",          "git://github.com/mileszs/ack.vim.git"
+vim_plugin_task "jekyll",           "git://github.com/tedkulp/jekyll.vim.git"
+vim_plugin_task "abolish",          "git://github.com/tpope/vim-abolish.git"
 vim_plugin_task "bundler",          "git://github.com/tpope/vim-bundler.git"
+vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
+vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
+vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
+vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
+vim_plugin_task "vim-rake",         "git://github.com/tpope/vim-rake.git"
+vim_plugin_task "rvm",              "git://github.com/tpope/vim-rvm.git"
+vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"
+vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
+vim_plugin_task "nerdtree",         "git://github.com/wycats/nerdtree.git"
 
 vim_plugin_task "command_t",        "http://s3.wincent.com/command-t/releases/command-t-1.2.1.vba" do
   Dir.chdir "ruby/command-t" do
