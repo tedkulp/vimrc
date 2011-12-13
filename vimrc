@@ -30,9 +30,6 @@ set laststatus=2
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
-" Command-T configuration
-let g:CommandTMaxHeight=20
-
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -118,6 +115,19 @@ let g:jekyll_post_date = "true"
 map <Leader>jn  :JekyllPost<CR>
 map <Leader>jd  :JekyllDraft<CR>
 map <Leader>jl  :JekyllList<CR>
+
+let g:fuf_coveragefile_prompt = '>GoToFile[]>'
+let g:fuf_coveragefile_exclude = '\v\~$|' .
+\                                '\.(o|exe|dll|bak|swp|log|sqlite3|png|gif|jpg)$|' .
+\                                '(^|[/\\])\.(hg|git|bzr|bundle)($|[/\\])|' .
+\                                '(^|[/\\])(log|tmp|vendor|system|doc|coverage|build|generated)($|[/\\])'
+
+let g:fuf_keyOpenTabpage = '<D-CR>'
+
+nmap <Leader>t :FufCoverageFile<CR>
+nmap <Leader>b :FufBuffer<CR>
+nmap <Leader>f :FufRenewCache<CR>
+nmap <Leader>T :FufTagWithCursorWord!<CR>
 
 " Too slow!!!
 if has("gui_macvim")
