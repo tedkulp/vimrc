@@ -129,6 +129,9 @@ nmap <Leader>b :FufBuffer<CR>
 nmap <Leader>f :FufRenewCache<CR>
 nmap <Leader>T :FufTagWithCursorWord!<CR>
 
+" Ack in text mode
+map g/ :Ack<space>
+
 " Too slow!!!
 if has("gui_macvim")
   autocmd FileType ruby,eruby set noballooneval
